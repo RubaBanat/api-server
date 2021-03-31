@@ -73,7 +73,7 @@ describe('api server', () => {
   it('should be able to get a food on Get /food/:id', async () => {
     const response = await request.get(`/api/v1/food/${id}`);
     expect(response.status).toEqual(200);
-    expect(response.body[0].name).toEqual('mansaf');
+    expect(response.body[0].name).toEqual('knafa');
   }); 
   it(`should delete a food on DELETE / food` , async ()=>{
     const response = await request.delete(`/api/v1/food/${id}`);
