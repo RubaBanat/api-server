@@ -38,7 +38,7 @@
 ---
 
 
-- [Pull-Request](https://github.com/RubaBanat/api-server/pull/2)
+- [Pull-Request](https://github.com/RubaBanat/api-server/pull/3)
 - [Heroku-deployment](https://ruba-api-server.herokuapp.com/)
 
 ---
