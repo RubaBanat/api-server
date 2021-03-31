@@ -21,7 +21,7 @@ async function getClothes(req, res) {
   }
 }
 
-async function getClothesById(req, res) {
+async function getClothesById(req, res, next) {
   try {
     const resObj = await clothes.read(req.params.id);
     res.json(resObj);
@@ -30,7 +30,7 @@ async function getClothesById(req, res) {
   }
 }
 
-async function createClothes(req, res) {
+async function createClothes(req, res, next) {
   const clothesObject = req.body;
   try {
     const resObj = await clothes.create(clothesObject);

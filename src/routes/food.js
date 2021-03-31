@@ -12,7 +12,7 @@ router.post('/', createFood);
 router.put('/:id', validator, updateFood);
 router.delete('/:id', validator, deleteFood);
 
-async function getFood(req, res) {
+async function getFood(req, res, next) {
   try {
     const resObj = await food.read();
     res.json(resObj);
@@ -21,7 +21,7 @@ async function getFood(req, res) {
   }
 }
 
-async function getFoodById(req, res) {
+async function getFoodById(req, res, next) {
   try {
     const resObj = await food.read(req.params.id);
     res.json(resObj);
@@ -30,7 +30,7 @@ async function getFoodById(req, res) {
   }
 }
 
-async function createFood(req, res) {
+async function createFood(req, res, next) {
   const foodObject = req.body;
   try {
     const resObj = await food.create(foodObject);
