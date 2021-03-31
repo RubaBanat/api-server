@@ -1,6 +1,6 @@
 'use strict';
 require('dotenv').config();
-const { app,start } = require('../src/server.js'); // => {server,start}
+const { app} = require('../src/server.js'); // => {server,start}
 const supergoose = require('@code-fellows/supergoose');
 const request = supergoose(app);
 
